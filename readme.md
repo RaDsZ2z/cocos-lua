@@ -12,3 +12,11 @@ image:setVisible(false)
 local img = ccui.ImageView:create()
 img:loadTexture("file.png")
 ```
+
+修改文件不需要重启游戏：
+```lua
+function RedBagListLayer:ctor()
+    startTestLuaFile("ui.redbag.RedBagListLayer")
+end
+-- src是根目录 把参数改成该文件对应的路径就可以
+```
