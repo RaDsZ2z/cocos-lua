@@ -35,4 +35,7 @@ bgImage:setCapInsets(cc.rect(10, 10, 10, 10))
 
 -- 修改图片尺寸
 image:setContentSize(cc.size(x,y))
+-- 需要先允许九宫格拉伸 修改尺寸才有效 也就是这样
+widget:setScale9Enabled(true)
+image:setContentSize(cc.size(x,y))
 ```
