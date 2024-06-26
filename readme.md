@@ -20,3 +20,11 @@ function RedBagListLayer:ctor()
 end
 -- src是根目录 把参数改成该文件对应的路径就可以
 ```
+
+调用对象方法时，可以用.或:调用例如方法名是func
+```lua
+self.func(x,y) --1.
+self:func() --2.
+方法1调用时参数表所见即所得，被调用方法体内self为空
+方法2调用时，会在第一个参数添加self，self即为调用者的self
+```
