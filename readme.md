@@ -28,3 +28,9 @@ self:func() --2.
 方法1调用时参数表所见即所得，被调用方法体内self为空
 方法2调用时，会在第一个参数添加self，self即为调用者的self
 ```
+九宫格拉伸
+widget:setScale9Enabled(true)
+bgImage:setCapInsets(cc.rect(10, 10, 10, 10))
+
+修改图片尺寸
+image:setContentSize(cc.size(x,y))
