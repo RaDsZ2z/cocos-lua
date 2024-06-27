@@ -48,3 +48,8 @@ node:ignoreContentAdaptWithSize(true)
 btn:setEnabled(true)
 btn:setEnabled(false)
 ```
+设置图片z轴
+```lua
+select:setZOrder(num)
+-- z轴数值小的被数值大的遮挡
+```
