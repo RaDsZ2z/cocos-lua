@@ -43,3 +43,8 @@ image:setContentSize(cc.size(x,y))
 -- 替换图片的时候会改变图片大小，使该对象大小不变
 node:ignoreContentAdaptWithSize(true)
 ```
+按钮是否可以点击
+```lua
+btn:setEnabled(true)
+btn:setEnabled(false)
+```
