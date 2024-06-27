@@ -53,3 +53,8 @@ btn:setEnabled(false)
 select:setZOrder(num)
 -- z轴数值小的被数值大的遮挡
 ```
+
+对象不可点击时置灰
+```lua
+helper.GrayManager:setGray(self.fail_bg, true)
+```
