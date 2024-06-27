@@ -58,3 +58,8 @@ select:setZOrder(num)
 ```lua
 helper.GrayManager:setGray(self.fail_bg, true)
 ```
+
+颜色格式转换
+```lua
+colorToccc3Type("#ffffff")
+```
