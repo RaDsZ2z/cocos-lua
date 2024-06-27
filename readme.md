@@ -39,6 +39,7 @@ image:setContentSize(cc.size(x,y))
 -- 需要先允许九宫格拉伸 修改尺寸才有效 也就是这样
 widget:setScale9Enabled(true)
 image:setContentSize(cc.size(x,y))
--- 使setContentSize()无效
+-- 使setContentSize()无效 从UI工程里读到的大小是多少就是多少
+-- 替换图片的时候会改变图片大小，使该对象大小不变
 node:ignoreContentAdaptWithSize(true)
 ```
