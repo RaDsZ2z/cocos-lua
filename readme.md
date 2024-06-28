@@ -92,3 +92,9 @@ x:setContentSize(cc.size(114,514))
 ```lua
 local x,y = node:getPosition()
 ```
+
+setColor() 和 setTextColor:
+```txt
+setColor会和之前已有的颜色混合
+setTextColor会覆盖之前的颜色
+```
