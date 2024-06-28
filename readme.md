@@ -88,3 +88,7 @@ x:getContentSIze().height
 x:setAnchroPoint(cc.p(0,0))
 x:setContentSize(cc.size(114,514))
 ```
+获得坐标
+```lua
+local x,y = node:getPosition()
+```
