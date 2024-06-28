@@ -81,3 +81,10 @@ getContentSize():
 x:getSize().width
 x:getContentSIze().height
 ```
+
+
+设置锚点 设置大小
+```lua
+x:setAnchroPoint(cc.p(0,0))
+x:setContentSize(cc.size(114,514))
+```
