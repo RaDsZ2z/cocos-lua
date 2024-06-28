@@ -76,4 +76,8 @@ getContentSize():
 -- 这个方法返回的是节点自身内容的大小。
 -- 这个大小不受节点的缩放、旋转等属性的影响。
 -- 它代表了节点原始的、未经任何变换的大小。
+
+-- .width 和 .height可以获得宽高
+x:getSize().width
+x:getContentSIze().height
 ```
