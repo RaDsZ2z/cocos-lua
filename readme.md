@@ -98,3 +98,8 @@ setColor() 和 setTextColor:
 setColor会和之前已有的颜色混合
 setTextColor会覆盖之前的颜色
 ```
+滑动效果：
+```txt
+列表容器 / 滚动容器
+listview / scrollview (?)
+```
