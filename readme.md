@@ -19,6 +19,8 @@ image:setVisible(true)
 image:setVisible(false)
 --创建图片
 local img = ccui.ImageView:create()
+
+local img = extend(ccui.ImageView:create()) --(自己封装的extend)
 img:loadTexture("file.png")
 ```
 
