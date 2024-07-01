@@ -119,5 +119,5 @@ scroll:setDirection(ccui.ScrollViewDir.horizontal)
 scroll:setContentSize(cc.p(114,514))
 scroll:setBounceEnabled(false)
 scroll:setInnerContainerSize(cc.size(innerWidth, winSize.height)) -- 设置元素大小
-scroll:pushBackCustomItem(item)
+scroll:addChild(item)
 ```
