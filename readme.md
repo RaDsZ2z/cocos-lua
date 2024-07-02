@@ -130,3 +130,4 @@ scroll:addChild(item)
 CommonTabNode.lua
 createCommonTabBtn()
 ```
+cc.Director:getInstance():getWinSize()
