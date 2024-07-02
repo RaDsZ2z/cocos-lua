@@ -115,7 +115,8 @@ listview:pushBackCustomItem(layout)
 local scroll = extend(ccui.ScrollView:create())
 scroll:setAnchorPoint(cc.p(0, 0))
 scroll:setPosition(cc.p(0, 0))
-scroll:setDirection(ccui.ScrollViewDir.horizontal)
+scroll:setDirection(ccui.ScrollViewDir.horizontal) --横向
+scroll:setDirection(ccui.ScrollViewDir.vertical)   --纵向
 scroll:setContentSize(cc.p(114,514))
 scroll:setBounceEnabled(false)
 scroll:setInnerContainerSize(cc.size(114,514)) -- 设置可拖动区域大小
