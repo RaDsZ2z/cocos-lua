@@ -85,7 +85,7 @@ x:getContentSIze().height
 
 设置锚点 设置大小
 ```lua
-x:setAnchroPoint(cc.p(0,0))
+x:setAnchorPoint(cc.p(0,0))
 x:setContentSize(cc.size(114,514))
 ```
 获得坐标
