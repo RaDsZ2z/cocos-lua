@@ -134,4 +134,5 @@ createCommonTabBtn()
 ```lua
 local winSize = cc.Director:getInstance():getWinSize()
 local platform_scale = getPlatformScale()
+winSize / platform_scale --获得屏幕实际大小
 ```
