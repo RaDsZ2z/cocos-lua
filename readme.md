@@ -133,6 +133,6 @@ createCommonTabBtn()
 通过这两行代码可以获得屏幕实际高度
 ```lua
 local winSize = cc.Director:getInstance():getWinSize()
-local platform_scale = getPlatformScale()
+local platform_scale = getPlatformScale(true)
 winSize / platform_scale --获得屏幕实际大小
 ```
