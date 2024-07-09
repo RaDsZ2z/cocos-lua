@@ -136,3 +136,8 @@ local winSize = cc.Director:getInstance():getWinSize()
 local platform_scale = getPlatformScale(true)
 winSize / platform_scale --获得屏幕实际大小
 ```
+
+弹窗太大，把dataToUI的4，5，6个参数改成nil,nil,true
+```lua
+dataToUI(1,2,3,nil,nil,true)
+```
