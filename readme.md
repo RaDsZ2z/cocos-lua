@@ -124,11 +124,11 @@ scroll:setInnerContainerSize(cc.size(114,514)) -- 设置可拖动区域大小
 scroll:addChild(item)
 ```
 
-按钮:
+创建按钮参考:
 ``` lua
--- 工作环境有效
 CommonTabNode.lua
 createCommonTabBtn()
+-- 工作环境有效
 ```
 获得屏幕实际大小
 ```lua
