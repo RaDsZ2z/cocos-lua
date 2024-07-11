@@ -141,3 +141,11 @@ winSize / platform_scale --获得屏幕实际大小
 ```lua
 dataToUI(1,2,3,nil,nil,true)
 ```
+
+弹窗动画
+```lua
+local move = cc.MoveTo:create(time,cc.p(0,105 * item.scale))
+local scaleAct = cc.ScaleTo:create(time,0.01)
+local fadeOut = cc.FadeOut:create(time) -- 淡出 在消失时会慢慢变淡
+local spawn = cc.Spawn:create(move,scaleAct,fadeOut) --三个动作同时进行{移动 缩小 淡出}
+```
