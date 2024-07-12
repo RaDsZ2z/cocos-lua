@@ -19,7 +19,7 @@ image:setVisible(true)
 image:setVisible(false)
 --创建图片
 local img = ccui.ImageView:create()
-
+-- 或者
 local img = extend(ccui.ImageView:create()) --(自己封装的extend)
 img:loadTexture("file.png")
 ```
@@ -148,4 +148,10 @@ local move = cc.MoveTo:create(time,cc.p(0,105 * item.scale))
 local scaleAct = cc.ScaleTo:create(time,0.01)
 local fadeOut = cc.FadeOut:create(time) -- 淡出 在消失时会慢慢变淡
 local spawn = cc.Spawn:create(move,scaleAct,fadeOut) --三个动作同时进行{移动 缩小 淡出}
+```
+
+将接收到的点击效果传给父节点
+```lua
+bg:setSwallowTouches(false) --不会吞掉触摸效果
+-- 使用clone()时不会克隆这个属性
 ```
