@@ -40,6 +40,7 @@ bgImage:setCapInsets(cc.rect(10, 10, 10, 10))
 image:setContentSize(cc.size(x,y))
 -- 需要先允许九宫格拉伸 修改尺寸才有效 也就是这样
 widget:setScale9Enabled(true)
+widget:setCapInsets(cc.rect(10, 10, 10, 10)) --允许九宫格拉伸之后可以设置九宫格拉伸参数
 image:setContentSize(cc.size(x,y))
 
 node:ignoreContentAdaptWithSize(true)
