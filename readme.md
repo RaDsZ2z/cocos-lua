@@ -43,9 +43,10 @@ widget:setScale9Enabled(true)
 widget:setCapInsets(cc.rect(10, 10, 10, 10)) --允许九宫格拉伸之后可以设置九宫格拉伸参数
 image:setContentSize(cc.size(x,y))
 
-node:ignoreContentAdaptWithSize(true)
+node:ignoreContentAdaptWithSize()
 -- 使setContentSize()无效 从UI工程里读到的大小是多少就是多少
--- 替换图片的时候会改变图片大小，使该对象大小不变
+node:ignoreContentAdaptWithSize(false)-- loadText()替换图片时会改变图片大小，使该对象大小不变
+node:ignoreContentAdaptWithSize(true)--  loadText()替换图片时会根据图片改变对象大小
 ```
 按钮是否可以点击
 ```lua
