@@ -125,7 +125,7 @@ scroll:setContentSize(cc.p(114,514))
 scroll:setBounceEnabled(false)
 scroll:setInnerContainerSize(cc.size(114,514)) -- 设置可拖动区域大小
 -- 当可拖动区域大小大于ContentSize时, 对象就可以被拖动了
-scroll:addChild(item)
+scroll:addChild(item) --item的位置在滑动方向上不能为负 否则不可见
 ```
 
 创建按钮参考:
