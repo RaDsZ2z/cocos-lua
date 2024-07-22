@@ -39,9 +39,11 @@ bgImage:setCapInsets(cc.rect(10, 10, 10, 10))
 -- 修改图片尺寸
 image:setContentSize(cc.size(x,y))
 -- 需要先允许九宫格拉伸 修改尺寸才有效 也就是这样
-widget:setScale9Enabled(true)
-widget:setCapInsets(cc.rect(10, 10, 10, 10)) --允许九宫格拉伸之后可以设置九宫格拉伸参数
+image:setScale9Enabled(true)
 image:setContentSize(cc.size(x,y))
+--允许九宫格拉伸之后可以设置九宫格拉伸参数
+image:setCapInsets(cc.rect(10, 10, 10, 10)) 
+
 
 node:ignoreContentAdaptWithSize()
 -- 使setContentSize()无效 从UI工程里读到的大小是多少就是多少
