@@ -164,5 +164,9 @@ bg:setSwallowTouches(false) --不会吞掉触摸效果
 
 colorText
 ```lua
-local newText = createColorText("<color:#ffdf5e>some word</color> <color:#ffffff>some word</color>")
+local newText = createColorText("<color:#ffdf5e>some word</color> <color:#ffffff>some word</color>",fontSize,ContentSize,baseColor)
+-- baseColor不会影响前面的<color>标签
+function createColorText(str, fontSize, contentSize, baseColor, outlinecolor, outlinesize,fontname)
+    ...
+end
 ```
