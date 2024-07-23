@@ -170,3 +170,12 @@ function createColorText(str, fontSize, contentSize, baseColor, outlinecolor, ou
     ...
 end
 ```
+
+创建文字获得大小
+```lua
+local text = ccui.Text:create()
+text:setString(msg.m_szMessage)
+text:setFontName(DEFAULT_FONT)
+text:setFontSize(22)
+local size = text:getContentSize()
+```
