@@ -161,3 +161,8 @@ bg:setSwallowTouches(false) --不会吞掉触摸效果
 -- 常用场景:scrollview上有背景 背景上有按钮  对背景使用
 -- 使用clone()时不会克隆这个属性
 ```
+
+colorText
+```lua
+    local newText = createColorText("<color:#ffdf5e>some word</color> <color:#ffffff>some word</color>")
+```
