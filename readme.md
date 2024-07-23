@@ -158,5 +158,6 @@ node:runAction(spawn)
 将接收到的点击效果传给父节点
 ```lua
 bg:setSwallowTouches(false) --不会吞掉触摸效果
+-- 常用场景:scrollview上有背景 背景上有按钮  对背景使用
 -- 使用clone()时不会克隆这个属性
 ```
