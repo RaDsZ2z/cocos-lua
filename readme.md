@@ -188,3 +188,8 @@ local bar = ccui.LoadingBar:create("ui_main/HeartSystem/BigHeart.png")
 bar:setRotation(-90) --旋转90度
 bar:setPercent(curExp / maxExp * 100)
 ```
+
+创建角色
+```lua
+armature = createHeroArmature(ppdata.Heros:getHero(iCardID))
+```
