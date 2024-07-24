@@ -22,6 +22,8 @@ local img = ccui.ImageView:create()
 -- 或者
 local img = extend(ccui.ImageView:create()) --(自己封装的extend)
 img:loadTexture("file.png")
+-- 设置图片圆角(没试过)
+img:setTextureRect(cc.rect(10, 10, 10, 10))
 ```
 
 调用对象方法时，可以用.或:调用例如方法名是func
