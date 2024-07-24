@@ -179,3 +179,10 @@ text:setFontName(DEFAULT_FONT)
 text:setFontSize(22)
 local size = text:getContentSize()
 ```
+
+进度条
+```lua
+local bar = ccui.LoadingBar:create("ui_main/HeartSystem/BigHeart.png")
+bar:setRotation(-90) --干嘛的 暂时还不知道
+bar:setPercent(curExp / maxExp * 100)
+```
