@@ -185,6 +185,6 @@ local size = text:getContentSize()
 进度条
 ```lua
 local bar = ccui.LoadingBar:create("ui_main/HeartSystem/BigHeart.png")
-bar:setRotation(-90) --干嘛的 暂时还不知道
+bar:setRotation(-90) --旋转90度
 bar:setPercent(curExp / maxExp * 100)
 ```
