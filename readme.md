@@ -193,3 +193,9 @@ bar:setPercent(curExp / maxExp * 100)
 ```lua
 armature = createHeroArmature(ppdata.Heros:getHero(iCardID))
 ```
+
+按钮回调函数
+```lua
+tab:setCallback(handler(self, function), nil, true) --有回弹效果
+tab:setCallback(handler(self, function), true, true) --无回弹效果
+```
