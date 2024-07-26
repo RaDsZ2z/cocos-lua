@@ -114,7 +114,7 @@ local listview = ccui.ListView:create()
 listview:setPosition(cc.p(panel_x, panel_y))
 listview:setContentSize(cc.size(panel_w, panel_h))
 listview:setDirection(ccui.ListViewDirection.horizontal) --水平方向
-listview:setItemsMargin(3.00) -- 设置元素间隔
+listview:setItemsMargin(114514) -- 设置元素间隔
 listview:pushBackCustomItem(layout)
 
 -- scrollview
