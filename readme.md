@@ -199,3 +199,16 @@ armature = createHeroArmature(ppdata.Heros:getHero(iCardID))
 tab:setCallback(handler(self, function), nil, true) --有回弹效果
 tab:setCallback(handler(self, function), true, true) --无回弹效果
 ```
+
+滑动监听
+```lua
+listView:addScrollViewEventListener(handler(self,self.listViewEvent))
+function TacticsLayer:listViewEvent(sender, evt)
+    print("listView moving...")
+end
+
+scrollView:addEventListener(handler(self, self.scrollViewEvent))
+function NewMoonLayer:scrollViewEvent(sender, evt)
+    print("scrollView moving...")
+end
+```
