@@ -108,6 +108,10 @@ setTextColor会覆盖之前的颜色
 ```lua
 --列表容器 / 滚动容器
 --listview / scrollview
+-- 跳转
+jumpToPercentHorizontal(percent)
+scrollToPercentHorizontal(percent, 1, true) --暂时还不知道参数1和true是干嘛的
+
 
 -- listview
 local listview = ccui.ListView:create()
