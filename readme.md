@@ -209,6 +209,8 @@ tab:setCallback(handler(self, function), true, true) --无回弹效果
 -- 对于listView 如果使用 addEventListener 监听频率很低
 listView:addScrollViewEventListener(handler(self,self.listViewEvent))
 function TacticsLayer:listViewEvent(sender, evt)
+    local offset = sender:getInnerContainer():getPosition() -- offset是偏移量 单位是像素
+    -- 值是0或负数 偏移得越多 负得越多
     print("listView moving...")
 end
 
