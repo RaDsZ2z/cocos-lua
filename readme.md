@@ -202,6 +202,7 @@ tab:setCallback(handler(self, function), true, true) --无回弹效果
 
 滑动监听
 ```lua
+-- 对于listView 如果使用 addEventListener 监听频率很低
 listView:addScrollViewEventListener(handler(self,self.listViewEvent))
 function TacticsLayer:listViewEvent(sender, evt)
     print("listView moving...")
