@@ -227,3 +227,11 @@ self.arr_right:setTouchEnabled(true)
 self.arr_left:setCallbackNew(handler(self,self.buttonLeft))
 self.arr_right:setCallbackNew(handler(self,self.buttonRight))
 ```
+
+页签按钮被选中与否 对应文字的位置
+```lua
+-- 未被选中
+txt_btn:setPosition(cc.p(88, 25))
+-- 被选中
+txt_btn:setPosition(cc.p(88, 32))
+```
