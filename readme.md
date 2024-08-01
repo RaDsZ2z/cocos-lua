@@ -222,8 +222,8 @@ end
 
 为图片添加点击事件
 ```lua
-    self.arr_left:setTouchEnabled(true)
-    self.arr_right:setTouchEnabled(true)
-    self.arr_left:setCallbackNew(handler(self,self.buttonLeft))
-    self.arr_right:setCallbackNew(handler(self,self.buttonRight))
+self.arr_left:setTouchEnabled(true)
+self.arr_right:setTouchEnabled(true)
+self.arr_left:setCallbackNew(handler(self,self.buttonLeft))
+self.arr_right:setCallbackNew(handler(self,self.buttonRight))
 ```
