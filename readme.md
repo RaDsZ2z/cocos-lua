@@ -176,7 +176,16 @@ function createColorText(str, fontSize, contentSize, baseColor, outlinecolor, ou
     ...
 end
 ```
-
+text
+```lua
+local lb = ccui.Text:create()
+lb:setString(param.str)
+lb:setName("text")
+lb:setPosition(cc.p(x+xe,y))
+lb:setFontSize(size)
+lb:setFontName(DEFAULT_FONT)
+lb:setTextColor(font_color)
+```
 创建文字获得大小
 ```lua
 local text = ccui.Text:create()
