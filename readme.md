@@ -176,7 +176,7 @@ function createColorText(str, fontSize, contentSize, baseColor, outlinecolor, ou
     ...
 end
 ```
-text
+text类
 ```lua
 local lb = ccui.Text:create()
 lb:setString(param.str)
@@ -184,7 +184,9 @@ lb:setName("text")
 lb:setPosition(cc.p(x+xe,y))
 lb:setFontSize(size)
 lb:setFontName(DEFAULT_FONT)
-lb:setTextColor(font_color)
+lb:setTextColor(cc.c3b(11,45,14))
+lb:setTextColor(colorToccc3Type("#114514"))
+
 ```
 创建文字获得大小
 ```lua
