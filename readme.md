@@ -246,3 +246,9 @@ txt_btn:setPosition(cc.p(88, 25))
 -- 被选中
 txt_btn:setPosition(cc.p(88, 32))
 ```
+设置点击状态
+```lua
+button:setEnabled(false) --设置按钮
+img:setTouchEnabled(true) --设置图片或按钮
+node:setBright(true) --明亮或置灰
+```
